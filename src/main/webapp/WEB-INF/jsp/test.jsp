@@ -1,0 +1,10 @@
+<html>
+<head>
+    <script>
+        document.write("23sdf333sdfs");
+    </script>
+</head>
+<body>
+<h2>test</h2>
+</body>
+</html>
