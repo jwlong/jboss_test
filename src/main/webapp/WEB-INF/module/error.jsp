@@ -12,12 +12,12 @@
     <title>Error</title>
 </head>
 <body>
-sdfsdf
+<h1>Error</h1>
 Eror not found the User ${user.name}
 <br>
-<h1>test </h1>
-<h1>test22 </h1>
-<h1>test32 </h1>adfadf
-<h1>test32 1231</h1>
+<h2>test </h2>
+<h3>test22 </h3>
+<h4>test32 </h4>adfadf
+<h5>test32 1231</h5>
 </body>
 </html>
