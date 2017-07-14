@@ -8,26 +8,8 @@
         version="3.1"
 >
   <display-name>JBOSS Spring</display-name>
-  <!--要写在DispatcherServlet的前面， 让 defaultServlet先拦截，这个就不会进入Spring了-->
-  <servlet-mapping>
-    <servlet-name>default</servlet-name>
-    <url-pattern>*.css</url-pattern>
-  </servlet-mapping>
 
-  <servlet-mapping>
-    <servlet-name>default</servlet-name>
-    <url-pattern>*.js</url-pattern>
-  </servlet-mapping>
 
-  <servlet-mapping>
-    <servlet-name>default</servlet-name>
-    <url-pattern>*.gif</url-pattern>
-  </servlet-mapping>
-
-  <servlet-mapping>
-    <servlet-name>default</servlet-name>
-    <url-pattern>*.html</url-pattern>
-  </servlet-mapping>
 
 
   <!--<listener>-->

@@ -13,9 +13,11 @@
     <context:component-scan base-package="com.dxfjyygy.action" />
     <!-- 静态资源(js、image等)的访问 -->
 
-    <mvc:resources location="/WEB-INF/html/" mapping="/html/*.html"/>
-    <mvc:annotation-driven/>
+    <mvc:resources location="WEB-INF/html/" mapping="/html/**"/>
+    <mvc:resources location="WEB-INF/images/" mapping="/images/**"/>
+
     <mvc:default-servlet-handler/>
+    <mvc:annotation-driven/>
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <property name="prefix" value="/WEB-INF/module/"/>
@@ -34,14 +36,14 @@
         <!--</property>-->
     <!--</bean>-->
 
-    <mvc:interceptors>
-        <mvc:interceptor>
-            <!--可配置多个拦截器 ，它是按顺序来执行 -->
-            <mvc:mapping path="/**"/>
-            <ref bean="loginInterceptor"></ref>
-        </mvc:interceptor>
-    </mvc:interceptors>
-    <bean id="loginInterceptor" class="com.dxfjyygy.intercepter.LoginInterceptor"> </bean>
+    <!--<mvc:interceptors>-->
+        <!--<mvc:interceptor>-->
+            <!--&lt;!&ndash;可配置多个拦截器 ，它是按顺序来执行 &ndash;&gt;-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<ref bean="loginInterceptor"></ref>-->
+        <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
+    <!--<bean id="loginInterceptor" class="com.dxfjyygy.intercepter.LoginInterceptor"> </bean>-->
     <!--这个是第一种定义 JobDetailBean Bean-->
 
     <!--<bean id="cronTriggerTest" class="org.springframework.scheduling.quartz.CronTriggerBean">-->

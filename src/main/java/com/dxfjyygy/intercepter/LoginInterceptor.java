@@ -17,13 +17,14 @@ public class LoginInterceptor implements HandlerInterceptor {
      */
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         System.out.println(" pre handle method ");
-        HttpSession session  =  request.getSession(true);
-        if(session.getAttribute("user") == null){
-            request.getRequestDispatcher("404.html").forward(request,response);
-            return  false;
-        }else {
-            return true;
-        }
+        return false;
+//        HttpSession session  =  request.getSession(true);
+//        if(session.getAttribute("user") == null){
+//            request.getRequestDispatcher("404.html").forward(request,response);
+//            return  false;
+//        }else {
+//            return true;
+//        }
         //return false;
 
     }

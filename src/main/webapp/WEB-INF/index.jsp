@@ -20,6 +20,7 @@
             <label>密码：</label> <input type="text" id="pwd" name="pwd"
                                       tabindex="3">
         </p>
+        <div><img src="images/1.png"></div>
         <p id="buttons">
             <input id="reset" type="reset" tabindex="4" value="取消"> <input
                 id="submit" type="submit" tabindex="5" value="登陆">
