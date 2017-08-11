@@ -8,10 +8,6 @@
         version="3.1"
 >
   <display-name>JBOSS Spring</display-name>
-
-
-
-
   <!--<listener>-->
     <!--<listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>-->
   <!--</listener>-->
